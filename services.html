@@ -20,8 +20,7 @@
   .btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:var(--ink-2)}
   header{position:sticky;top:0;z-index:50;background:rgba(247,245,239,.97);backdrop-filter:blur(8px);border-bottom:1px solid #e4e0d5}
   .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
-  .brand{font-family:var(--display);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:1.05rem;line-height:1.05}
-  .brand small{display:block;font-size:.58rem;letter-spacing:.3em;color:var(--gold-deep);font-weight:600}
+  .brand{display:flex;align-items:center;flex:0 0 auto}.brand img{height:36px;width:auto;display:block}@media(min-width:880px){.brand img{height:46px}}
   .navlinks{display:none;gap:1.5rem;font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:.9rem}
   .navlinks a{opacity:.8}.navlinks a:hover{opacity:1;color:var(--gold-deep)}.navlinks a.active{color:var(--gold-deep);opacity:1}
   .callbtn{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--display);letter-spacing:.05em;text-transform:uppercase;font-size:.82rem;color:var(--ink);background:var(--gold);padding:.55rem .9rem;border-radius:6px;font-weight:600}
@@ -101,7 +100,7 @@
 </head>
 <body>
 <header><div class="wrap nav">
-  <a class="brand" href="index.html">Renovation Pros<small>Construction</small></a>
+  <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Renovation Pros Construction"></a>
   <nav class="navlinks"><a href="index.html">Home</a><a href="services.html" class="active">Services</a><a href="portfolio.html">Work</a><a href="https://www.enhancify.com/myrenopros" target="_blank" rel="noopener">Financing</a><a href="contact.html">Contact</a></nav>
   <a class="callbtn" href="tel:+17347322773">Call (734) 732-2773</a>
 </div></header>
