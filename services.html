@@ -67,19 +67,11 @@
   .gal-empty p.msg{color:var(--muted);max-width:46ch;margin:.3rem auto 0}
   .gal-ph{aspect-ratio:4/3;border-radius:10px;background:repeating-linear-gradient(45deg,#e9e5da,#e9e5da 10px,#e3dfd3 10px,#e3dfd3 20px);border:1px dashed #cfcabb;display:grid;place-items:center}
   .gal-ph svg{width:34px;height:34px;stroke:#b3ad9c;fill:none;stroke-width:1.6}
-  /* ----- project cards (division -> projects -> lightbox) ----- */
-  .gal-projs{display:grid;gap:.9rem;grid-template-columns:1fr}
-  @media(min-width:600px){.gal-projs{grid-template-columns:1fr 1fr}}
-  @media(min-width:900px){.gal-projs{grid-template-columns:repeat(3,1fr)}}
-  .gal-proj{border:1px solid #e0dccf;border-radius:10px;overflow:hidden;background:var(--paper-2);cursor:pointer;padding:0;display:block;width:100%;text-align:left;font-family:var(--body);color:var(--ink);transition:.2s}
-  .gal-proj:hover{border-color:var(--gold);box-shadow:0 8px 24px rgba(0,0,0,.10)}
-  .gal-proj:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px}
-  .gal-proj .ph{display:block;aspect-ratio:4/3;overflow:hidden;background:#ddd8ca}
-  .gal-proj .ph img{width:100%;height:100%;object-fit:cover;transition:.35s}
-  .gal-proj:hover .ph img{transform:scale(1.05)}
-  .gal-proj .meta{display:block;padding:.75rem .9rem}
-  .gal-proj .meta .t{display:block;font-family:var(--display);font-weight:600;text-transform:uppercase;font-size:1rem;letter-spacing:.02em;line-height:1.15}
-  .gal-proj .meta .n{display:block;margin-top:.2rem;color:var(--muted);font-size:.82rem}
+  /* ----- project tiles: the existing .gal-tile look, plus a title label ----- */
+  .gal-tile{position:relative}
+  .gal-tile .cap{position:absolute;left:0;right:0;bottom:0;padding:.6rem .75rem;background:linear-gradient(to top,rgba(14,13,9,.88),rgba(14,13,9,.45) 55%,rgba(14,13,9,0));color:#fff;font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.02em;font-size:.95rem;line-height:1.18;text-align:left}
+  .gal-tile .cap small{display:block;font-family:var(--body);font-weight:400;text-transform:none;letter-spacing:0;font-size:.78rem;opacity:.85;margin-top:.12rem}
+  .gal-tile:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px}
   .gal-empty .msg a{color:var(--gold-deep);text-decoration:underline}
   .lb{position:fixed;inset:0;z-index:110;display:none;background:rgba(8,8,6,.94);place-items:center}
   .lb.open{display:grid}
@@ -357,12 +349,12 @@ var galleries = {
   var projects = [];
 
   function projectsHTML(list){
-    return '<div class="gal-projs">' + list.map(function(p,i){
+    return '<div class="gal-grid">' + list.map(function(p,i){
       var n = p.photos.length;
-      return '<button type="button" class="gal-proj" data-p="' + i + '" aria-label="View photos of ' + esc(p.title) + '">' +
-             '<span class="ph"><img src="' + esc(p.cover) + '" alt="' + esc(p.title) + '" loading="lazy"></span>' +
-             '<span class="meta"><span class="t">' + esc(p.title) + '</span>' +
-             '<span class="n">' + n + ' photo' + (n === 1 ? '' : 's') + '</span></span></button>';
+      return '<button type="button" class="gal-tile" data-p="' + i + '" aria-label="View photos of ' + esc(p.title) + '">' +
+             '<img src="' + esc(p.cover) + '" alt="' + esc(p.title) + '" loading="lazy">' +
+             '<span class="cap">' + esc(p.title) + '<small>' + n + ' photo' + (n === 1 ? '' : 's') + '</small></span>' +
+             '</button>';
     }).join("") + '</div>';
   }
   function emptyHTML(key){
@@ -416,10 +408,10 @@ var galleries = {
   });
 
   galBody.addEventListener("click", function(e){
-    var pc = e.target.closest(".gal-proj");
-    if (pc) { openProject(Number(pc.getAttribute("data-p"))); return; }
     var t = e.target.closest(".gal-tile");
-    if (t) openLb(Number(t.getAttribute("data-i")));
+    if (!t) return;
+    if (t.hasAttribute("data-p")) { openProject(Number(t.getAttribute("data-p"))); return; }
+    if (t.hasAttribute("data-i")) openLb(Number(t.getAttribute("data-i")));
   });
   document.getElementById("galClose").addEventListener("click", closeGallery);
   overlay.addEventListener("click", function(e){ if (e.target === overlay) closeGallery(); });
