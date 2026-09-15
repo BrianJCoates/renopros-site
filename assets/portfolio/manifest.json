@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "commercial-mezzanine",
+    "title": "Commercial Mezzanine & Bathroom",
+    "division": "commercial",
+    "cover": "assets/portfolio/commercial-mezzanine/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/commercial-mezzanine/01.jpg",
+      "assets/portfolio/commercial-mezzanine/02.jpg",
+      "assets/portfolio/commercial-mezzanine/03.jpg",
+      "assets/portfolio/commercial-mezzanine/04.jpg",
+      "assets/portfolio/commercial-mezzanine/05.jpg",
+      "assets/portfolio/commercial-mezzanine/06.jpg",
+      "assets/portfolio/commercial-mezzanine/07.jpg",
+      "assets/portfolio/commercial-mezzanine/08.jpg"
+    ]
+  },
+  {
+    "slug": "royal-oak-stair",
+    "title": "Royal Oak Stair",
+    "division": "residential",
+    "cover": "assets/portfolio/royal-oak-stair/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/royal-oak-stair/01.jpg",
+      "assets/portfolio/royal-oak-stair/02.jpg",
+      "assets/portfolio/royal-oak-stair/03.jpg",
+      "assets/portfolio/royal-oak-stair/04.jpg",
+      "assets/portfolio/royal-oak-stair/05.jpg",
+      "assets/portfolio/royal-oak-stair/06.jpg",
+      "assets/portfolio/royal-oak-stair/07.jpg",
+      "assets/portfolio/royal-oak-stair/08.jpg"
+    ]
+  },
+  {
+    "slug": "clarkston-stair",
+    "title": "Clarkston Stair",
+    "division": "residential",
+    "cover": "assets/portfolio/clarkston-stair/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/clarkston-stair/01.jpg",
+      "assets/portfolio/clarkston-stair/02.jpg",
+      "assets/portfolio/clarkston-stair/03.jpg",
+      "assets/portfolio/clarkston-stair/04.jpg",
+      "assets/portfolio/clarkston-stair/05.jpg",
+      "assets/portfolio/clarkston-stair/06.jpg",
+      "assets/portfolio/clarkston-stair/07.jpg"
+    ]
+  },
+  {
+    "slug": "erie-bathroom",
+    "title": "Erie Bathroom Remodel",
+    "division": "residential",
+    "cover": "assets/portfolio/erie-bathroom/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/erie-bathroom/01.jpg",
+      "assets/portfolio/erie-bathroom/02.jpg",
+      "assets/portfolio/erie-bathroom/03.jpg",
+      "assets/portfolio/erie-bathroom/04.jpg",
+      "assets/portfolio/erie-bathroom/05.jpg",
+      "assets/portfolio/erie-bathroom/06.jpg",
+      "assets/portfolio/erie-bathroom/07.jpg",
+      "assets/portfolio/erie-bathroom/08.jpg"
+    ]
+  },
+  {
+    "slug": "bellview-kitchen",
+    "title": "Bellview Kitchen",
+    "division": "residential",
+    "cover": "assets/portfolio/bellview-kitchen/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/bellview-kitchen/01.jpg",
+      "assets/portfolio/bellview-kitchen/02.jpg",
+      "assets/portfolio/bellview-kitchen/03.jpg",
+      "assets/portfolio/bellview-kitchen/04.jpg",
+      "assets/portfolio/bellview-kitchen/05.jpg",
+      "assets/portfolio/bellview-kitchen/06.jpg",
+      "assets/portfolio/bellview-kitchen/07.jpg",
+      "assets/portfolio/bellview-kitchen/08.jpg"
+    ]
+  },
+  {
+    "slug": "wixom-kitchen",
+    "title": "Wixom Kitchen",
+    "division": "residential",
+    "cover": "assets/portfolio/wixom-kitchen/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/wixom-kitchen/01.jpg",
+      "assets/portfolio/wixom-kitchen/02.jpg",
+      "assets/portfolio/wixom-kitchen/03.jpg",
+      "assets/portfolio/wixom-kitchen/04.jpg",
+      "assets/portfolio/wixom-kitchen/05.jpg",
+      "assets/portfolio/wixom-kitchen/06.jpg",
+      "assets/portfolio/wixom-kitchen/07.jpg"
+    ]
+  },
+  {
+    "slug": "livonia-kitchen",
+    "title": "Livonia Kitchen",
+    "division": "residential",
+    "cover": "assets/portfolio/livonia-kitchen/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/livonia-kitchen/01.jpg",
+      "assets/portfolio/livonia-kitchen/02.jpg",
+      "assets/portfolio/livonia-kitchen/03.jpg",
+      "assets/portfolio/livonia-kitchen/04.jpg",
+      "assets/portfolio/livonia-kitchen/05.jpg",
+      "assets/portfolio/livonia-kitchen/06.jpg",
+      "assets/portfolio/livonia-kitchen/07.jpg"
+    ]
+  },
+  {
+    "slug": "erie-millwork",
+    "title": "Erie Millwork",
+    "division": "residential",
+    "cover": "assets/portfolio/erie-millwork/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/erie-millwork/01.jpg",
+      "assets/portfolio/erie-millwork/02.jpg",
+      "assets/portfolio/erie-millwork/03.jpg",
+      "assets/portfolio/erie-millwork/04.jpg"
+    ]
+  },
+  {
+    "slug": "garage-makeover",
+    "title": "Garage Makeover",
+    "division": "residential",
+    "cover": "assets/portfolio/garage-makeover/01-thumb.jpg",
+    "photos": [
+      "assets/portfolio/garage-makeover/01.jpg",
+      "assets/portfolio/garage-makeover/02.jpg",
+      "assets/portfolio/garage-makeover/03.jpg",
+      "assets/portfolio/garage-makeover/04.jpg",
+      "assets/portfolio/garage-makeover/05.jpg",
+      "assets/portfolio/garage-makeover/06.jpg",
+      "assets/portfolio/garage-makeover/07.jpg",
+      "assets/portfolio/garage-makeover/08.jpg"
+    ]
+  }
+]
