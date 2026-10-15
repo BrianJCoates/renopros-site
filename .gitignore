@@ -1,0 +1,46 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+node_modules/
+*.log
+
+# ---- Data of record: NEVER commit (building blocks only) ----
+# Secrets and real config: commit .env.example with placeholders, never the real .env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+# Databases holding real data (commit schema + empty/fake seed instead)
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.dump
+# Spreadsheets / exports of ledgers, invoices, estimates, customer records
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.ods
+*.qbo
+*.ofx
+# Recordings and source footage
+*.mp4
+*.mov
+*.m4a
+*.wav
+*.mp3
+*.webm
